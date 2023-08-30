@@ -1,9 +1,9 @@
-const Title = () => {
-    return (
-        <div >
-            My Website 
-        </div>
-    )
+interface Props {
+  name: string;
 }
 
-export default Title
+const Title = (props: Props) => {
+  return <h1>{props.name}</h1>;
+};
+
+export default Title;
